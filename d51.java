@@ -9,3 +9,20 @@ public int countTriple(String str) {
   } return count3;
 
 }
+
+//String3 sumDigits
+public int sumDigits(String str) {
+
+  String digits = "";
+  int count = 0;
+
+  for (int i = 0; i<str.length(); i++) {
+    if (Character.isDigit(str.charAt(i))) {
+      count = count + Integer.parseInt(str.charAt(i) + "");
+    }
+
+
+  } return count;
+
+
+  }
