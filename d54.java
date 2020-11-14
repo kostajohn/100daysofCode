@@ -13,3 +13,14 @@ public boolean scores100(int[] scores) {
 
 
 }
+
+//Logic2 makeBricks 
+public boolean makeBricks(int small, int big, int goal) {
+  if (goal % 5 > small) {
+    return false;
+  } else if (big * 5 + small < goal) {
+    return false;
+  } else {
+    return true;
+  }
+}
